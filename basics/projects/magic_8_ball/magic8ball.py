@@ -1,5 +1,6 @@
 import random #Imports the random module
 
+
 print()
 print('Magic 8 ball says... ') #First line (text string)
 def get_answer(answer_number): #get_answer function is defined
@@ -23,5 +24,9 @@ def get_answer(answer_number): #get_answer function is defined
         return 'Very doubtful.'
 
 r = random.randint(1, 9) #random integer between 1 & 9 is called and stored in a variable called r
-fortune = get_answer(r) #get_answer function is called with r as the argument
-print(fortune)
+get_answer(r) #get_answer function is called with r as the argument
+print(get_answer(r))
+
+
+
+

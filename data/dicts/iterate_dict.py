@@ -1,6 +1,5 @@
 def pattern():
     data = {"Short Sequence": 3, "Medium Sequence": 2, "Long Sequence": 1}
-    print()
     return data
 
 
@@ -11,7 +10,6 @@ def display_keys(data):
     print()
 
 
-
 def display_values(data):
     print("The values are:")
     for values in data.values():
@@ -20,8 +18,15 @@ def display_values(data):
 
 
 def display_items(data):
+    print("The items (tuples) are:")
+    for items in data.items():                                 # Items gives back a tuple
+        print(f"{items}")
+    print()
+
+
+def display_pairs(data):
     print("The key-value pairs are:")
-    for key, value in data.items():
+    for key, value in data.items():                             # This 'unpacks' the tuple 'items'
         print(f"{key} : {value}")
     print()
 
@@ -30,9 +35,11 @@ def display_items(data):
 def run():
     data = pattern()
     print(f"Dictionary: {data}")
+    print()
     display_keys(data)
     display_values(data)
     display_items(data)
+    display_pairs(data)
 
 
 if __name__ == "__main__":

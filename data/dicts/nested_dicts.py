@@ -15,7 +15,12 @@ def long_pattern():
 
 def run():
     print("Analysing patterns...")
-    all_patterns = {"short sequence": short_pattern(), "medium sequence": medium_pattern(), "long sequence": long_pattern()}
+    all_patterns = {
+        "short sequence": short_pattern(),
+        "medium sequence": medium_pattern(),
+        "long sequence": long_pattern()
+    }
+    # the function call within the 'value' position creates another dictionary, hence a nested dictionary
 
     for key, value in all_patterns.items():                             # This 'unpacks' the tuple 'items'
         print(f"{key}: {value}")
